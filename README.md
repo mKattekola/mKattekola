@@ -1,17 +1,16 @@
-## Hi there 👋
-<h1 align="center">Hi, I'm Meghna 👋</h1>
+## Hello there 👋
+<h1 align="center">I'm Meghna Kattekola 👋</h1>
 
 🎓 Recent Master's Graduate in **Data Analytics Engineering**  
-📍 Based in the U.S. | Actively seeking opportunities in **Data Science**, **.NET development**, and **Analytics**  
+📍 Based in the U.S. | Actively seeking opportunities in **Data Science** and **Analytics**  
 💼 Open to H1B-sponsored roles  
 
 ---
 
 ### 💻 Technologies I Work With
-- **Languages**: Python, C#, SQL, HTML/CSS
-- **Libraries**: Pandas, NumPy, Scikit-learn, NLTK
-- **Visualization**: Power BI, Matplotlib, Seaborn
-- **Tools**: Git, GitHub, Jupyter, Visual Studio
+- **Languages**: MySQL,Python, C#, SQL, HTML/CSS, Statistics,MongoDB, Natural Language Processing
+- **Data Libraires and Visualization**: Pandas, NumPy, scikit-learn, Power BI, Jupyter Notebook, Matplotlib, Seaborn
+- **Tools**: Git, GitHub, Microsoft Excel, Visual Studio, Databricks, VSCode, RStudio, Microsoft Outlook and PowerPoint
 
 ---
 
@@ -29,12 +28,12 @@
 ---
 
 ### 🌱 Currently Learning
-`.NET`, `ASP.NET MVC`, `JavaScript`, `Entity Framework`, `React`
+`Tableu`,  `JavaScript`,  `React`
 
 ---
 
 ### 📫 Let's Connect!
-[📧 meghnakattekola@gmail.com](mailto:meghnakattekola@gmail.com)  
+[📧 kattekola.meghna@gmail.com]  
 [💼 LinkedIn](https://www.linkedin.com/in/meghnadk)  
 [🌐 Portfolio Website](https://github.com/mkattekola/portfolio) *(coming soon)*
 
