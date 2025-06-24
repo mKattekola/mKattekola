@@ -28,14 +28,14 @@
 ---
 
 ### 🌱 Currently Learning
-`Tableu`,  `JavaScript`,  `React`
+`Tableu`,  `JavaScript`,  `Azure`
 
 ---
 
 ### 📫 Let's Connect!
 [📧 kattekola.meghna@gmail.com]  
 [💼 LinkedIn](https://www.linkedin.com/in/meghnadk)  
-[🌐 Portfolio Website](https://github.com/mkattekola/portfolio) *(coming soon)*
+[🌐 Portfolio Website](https://github.com/mkattekola/mkattekola)
 
 ---
 
