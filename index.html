@@ -15,7 +15,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to bottom right, #eef2f3, #cfd9df);
       color: #333;
-      line-height: 1.6;
+      line-height: 1.7;
     }
     header {
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
@@ -26,7 +26,24 @@
       align-items: center;
       flex-wrap: wrap;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
     }
+    section p {
+      line-height: 1.7;
+    }
+    .project-image {
+      max-width: 100%;
+      width: 600px;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+}
+
+
     .branding {
       display: flex;
       flex-direction: column;
@@ -81,7 +98,7 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      padding: 60px 20px;
+      padding: 60px 20px 20px 20px;
       gap: 40px;
       animation: fadeIn 1.2s ease-in-out;
     }
@@ -111,10 +128,19 @@
       margin-top: 25px;
     }
     section {
-      padding: 60px 20px;
+      padding: 40px 20px 20px 20px;
       max-width: 1000px;
       margin: auto;
+      scroll-margin-top: 80px;
     }
+    html {
+      scroll-behavior: smooth;
+    }
+    section ul li,
+    section li {
+      line-height: 3; /* You can increase to 2.2 or more if needed */
+    }
+
     h2 {
       color: #2c3e50;
     }
@@ -171,6 +197,44 @@
         text-align: center;
       }
     }
+  .bubble-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .course-bubble {
+    background-color: #e2ecf5;
+    color: #1d3557;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+
+  .course-bubble:hover {
+    background-color: #cbdff2;
+    cursor: default;
+  }
+  .project-image {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px auto 10px;
+  border-radius: 8px;
+}
+
+.image-caption {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+}
+
   </style>
 </head>
 <body onload="AOS.init()">
@@ -180,18 +244,18 @@
       <h1>Meghna Kattekola</h1>
       <p>Data Analytics Engineer | Exploring Data Analyst & Data Science Opportunities</p>
     </div>
+
     <nav>
       <a href="#home"><img src="https://img.icons8.com/ios-filled/20/ffffff/home.png"/>Home</a>
       <a href="#about"><img src="https://img.icons8.com/ios-filled/20/ffffff/user.png"/>About</a>
       <a href="#skills"><img src="https://img.icons8.com/ios-filled/20/ffffff/services.png"/>Skills</a>
       <a href="#coursework"><img src="https://img.icons8.com/ios-filled/20/ffffff/training.png"/>Coursework</a>
-      <a href="#projects"><img src="https://img.icons8.com/ios-filled/20/ffffff/briefcase.png"/>Projects</a>
       <a href="#contact"><img src="https://img.icons8.com/ios-filled/20/ffffff/new-post.png"/>Contact</a>
     </nav>
   </header>
 
   <section class="intro-section" id="home">
-    <img src="Profile.jpg" alt="Meghna Profile Photo">
+    <img src="profile.jpg" alt="Meghna Profile Photo">
     <div class="intro-text" data-aos="fade-up">
       <h2>Welcome to My Portfolio</h2>
       <p>Hi! I'm Meghna — a passionate data analytics engineer with an eye for meaningful insights and a drive to build web solutions. Dive into my journey below!</p>
@@ -212,35 +276,63 @@
   <section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
     <ul>
-      <li><strong>Languages:</strong> Python, SQL, C#, HTML, CSS</li>
-      <li><strong>Libraries & Tools:</strong> Pandas, NumPy, scikit-learn, Power BI, Jupyter, Databricks</li>
-      <li><strong>Web:</strong> ASP.NET, GitHub, Visual Studio, Bootstrap</li>
+      <li><strong>Programming & Databases: </strong>Python, SQL, MySQL, MongoDB, DBMS, HTML/CSS, C# </li>
+      <li><strong>Data Science & ML Tools: </strong> Pandas, NumPy, scikit-learn, Seaborn, Matplotlib, Jupyter Notebook</li>
+      <li><strong>NLP & Text Mining: </strong>VADER, spaCy, Langdetect</li>
+      <li><strong>Visualization & BI: </strong>Power BI, Excel, Databricks</li>
+      <li><strong>Development Tools: </strong>Visual Studio Code, Visual Studio, Git, GitHub, RStudio, Microsoft Office, Bootstrap</li>
       <li><strong>Soft Skills:</strong> Attention to detail, Time management, Collaboration, Communication, Honesty, Reliability</li>
     </ul>
   </section>
 
-  <section id="coursework" data-aos="fade-up">
-    <h2>Graduate Coursework</h2>
-    <ul>
-      <li>AIT 580  - Analytics Big Data to Info </li>
-      <li>OR 531   - Analytics/Decision Analysis</li>
-      <li>STAT 515 - Visualization for Analytics</li>
-      <li>AIT 526  - Introduction to NLP</li>
-      <li>AIT 614  - Big Data Essentials</li>
-      <li>CS 504   - Principles Data Managmt/Mining</li>
-      <li>AIT 524  - Database Management Systems</li>
-      <li>AIT 636  - Interpretable Machine Learning</li>
-      <li>GBUS 738 - Data Mining for Bus Analytics</li>
-      <li>DAEN 690 - Data Analytics Project</li>
-    </ul>
-  </section>
+<section id="coursework" data-aos="fade-up">
+  <h2> Academic Coursework</h2>
+</h2>
+
+  <h3>🎓 Master of Science in Data Analytics Engineering – Coursework</h2>
+  <div class="bubble-container">
+    <span class="course-bubble">AIT 580 - Analytics Big Data to Info</span>
+    <span class="course-bubble">OR 531 - Analytics/Decision Analysis</span>
+    <span class="course-bubble">STAT 515 - Visualization for Analytics</span>
+    <span class="course-bubble">AIT 526 - Introduction to NLP</span>
+    <span class="course-bubble">AIT 614 - Big Data Essentials</span>
+    <span class="course-bubble">CS 504 - Principles Data Managmt/Mining</span>
+    <span class="course-bubble">AIT 524 - Database Management Systems</span>
+    <span class="course-bubble">AIT 636 - Interpretable Machine Learning</span>
+    <span class="course-bubble">GBUS 738 - Data Mining for Business Analytics</span>
+    <span class="course-bubble">DAEN 690 - Data Analytics Project</span>
+  </div>
+</section>
+
+<section id="undergrad-coursework" data-aos="fade-up">
+  <h2>🎓 Bachelor of Technology in Computer Science – Coursework</h2>
+  <div class="bubble-container">
+    <span class="course-bubble">Data Structures</span>
+    <span class="course-bubble">OOP through Java</span>
+    <span class="course-bubble">Probability & Statistics</span>
+    <span class="course-bubble">Python Programming</span>
+    <span class="course-bubble">Computer Organization</span>
+    <span class="course-bubble">Operating Systems</span>
+    <span class="course-bubble">Database Management Systems</span>
+    <span class="course-bubble">Computer Networks</span>
+    <span class="course-bubble">Software Engineering</span>
+    <span class="course-bubble">Web Technologies</span>
+    <span class="course-bubble">Cybersecurity</span>
+    <span class="course-bubble">Data Science</span>
+    <span class="course-bubble">Big Data</span>
+    <span class="course-bubble">Artificial Intelligence</span>
+    <span class="course-bubble">Human-Computer Interaction</span>
+  </div>
+</section>
 
   <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="project">
       <h3>Client Project: GaiaViz SDG Visualization Platform</h3>
       <p>Leveraged a web-based interactive tool for visualizing SDG aid and collaboration trends using client-supplied documentation. Integrated geospatial analysis and network graph logic to highlight donor-recipient roles across 195 countries. Delivered clear, presentation-ready insights with a custom data-tag-link system. Final visualizations received positive feedback from client stakeholders.</p>
-      <img src="gaiaviz_project.png" alt="GaiaViz Visualization Screenshot">
+      <img src="Gaiaviz.jpg" alt="GaiaViz Visualization" class="project-image"/>
+      <p class="image-caption">Initial screenshot of GaiaViz provided by the client – representing the base visualization environment.</p>
+
     </div>
     <div class="project">
       <h3>Early-Stage Alzheimer's Disease Prediction</h3>
@@ -252,6 +344,7 @@
       <p>Performed aspect-based sentiment analysis on hotel reviews using VADER, with preprocessing techniques like tokenization and stopword removal. Built a multilingual recommendation engine in Python using SpaCy and langdetect to match user queries with hotel features across English, French, and Spanish.</p>
     </div>
   </section>
+  
 
   <section id="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
@@ -264,6 +357,10 @@
       <li><img src="https://img.icons8.com/ios-filled/20/000000/open-resume.png"/> <a href="resume.pdf" download>Download My Resume</a></li>
     </ul>
   </section>
+  <div style="display: flex; justify-content: space-between; margin-top: 50px;">
+    <a href="#projects" class="back-to-projects">⬅️ Back to Projects</a>
+    <a href="#top" class="back-to-top">⬆️ Back to Top</a>
+  </div>
 
   <footer>
     <p>&copy; 2025 Meghna Kattekola. All rights reserved.</p>
@@ -271,6 +368,11 @@
 
   <script>
     AOS.init({ duration: 1000, once: true });
+    const toggleBtn = document.getElementById("toggleMode");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      toggleBtn.textContent = document.body.classList.contains("dark") ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
   </script>
 </body>
 </html>
