@@ -1,0 +1,360 @@
+html
+{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #eef2f3, #cfd9df);
+  color: #333;
+  line-height: 1.7;
+}
+header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+section p {
+    line-height: 1.7;
+}
+.project-image {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+.branding {
+    display: flex;
+    flex-direction: column;
+}
+.branding h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+.branding p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #ddd;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+nav a img {
+    margin-right: 6px;
+}
+nav a:hover {
+    background-color: #fff;
+    color: #2c3e50;
+}
+.resume-btn {
+    background-color: #00b4d8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.resume-btn:hover {
+    background-color: #0077b6;
+    transform: scale(1.05);
+}
+.intro-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.intro-subtext {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 20px 20px 20px;
+    gap: 40px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+.intro-section img {
+    max-width: 260px;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+.intro-section img:hover {
+    transform: scale(1.05);
+}
+.intro-text {
+    max-width: 520px;
+    text-align: center;
+}
+.intro-text h2 {
+    color: #2c3e50;
+    font-size: 2.4em;
+    margin-bottom: 15px;
+}
+.intro-text p {
+    font-size: 1.2em;
+    color: #444;
+}
+.intro-text .button-group {
+    margin-top: 25px;
+}
+section {
+    padding: 40px 20px 20px 20px;
+    max-width: 1000px;
+    margin: auto;
+    scroll-margin-top: 80px;
+}
+html {
+    scroll-behavior: smooth;
+}
+section ul li,
+section li {
+    line-height: 3; /* You can increase to 2.2 or more if needed */
+}
+
+h2 {
+    color: #2c3e50;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #6c63ff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.project img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+#contact ul li {
+    margin-bottom: 10px;
+}
+#contact img {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+    header {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    nav {
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    }
+    .resume-btn {
+    align-self: flex-end;
+    margin-top: 10px;
+    }
+    .intro-section {
+    flex-direction: column;
+    text-align: center;
+    }
+}
+.bubble-container {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin-top: 15px;
+}
+
+.course-bubble {
+background-color: #e2ecf5;
+color: #1d3557;
+padding: 8px 16px;
+border-radius: 20px;
+font-size: 0.95rem;
+font-weight: 500;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+transition: background-color 0.3s;
+}
+
+.course-bubble:hover {
+background-color: #cbdff2;
+cursor: default;
+}
+.project-image {
+max-width: 100%;
+width: 600px;
+height: auto;
+display: block;
+margin: 20px auto 10px;
+border-radius: 8px;
+}
+
+.image-caption {
+text-align: center;
+font-style: italic;
+color: #555;
+font-size: 0.95rem;
+}
+.resume-buttons {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+margin-top: 20px;
+}
+
+.btn {
+min-width: 160px;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+background-color: white;
+color: #0077cc;
+border: 2px solid #0077cc;
+border-radius: 8px;
+cursor: pointer;
+font-weight: 500;
+transition: all 0.3s ease;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+white-space: nowrap;
+}
+
+.view-btn {
+background-color: #fff;
+color: #0077cc;
+border: 2px solid #0077cc;
+}
+
+.view-btn:hover {
+background-color: #0077cc;
+color: #fff;
+}
+
+.download-btn {
+background-color: #0077cc;
+color: white;
+border: 2px solid transparent;
+}
+
+.download-btn:hover {
+background-color: #005fa3;
+}
+.btn:hover {
+transform: translateY(-2px);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+background-color: #0077cc;
+color: white;
+transition: 0.3s ease
+}
+.see-work-btn {
+background-color: #0077cc;
+color: white;
+border: 2px solid #0077cc;
+}
+
+.see-work-btn:hover {
+background-color: #005fa3;
+}
+#education {
+padding: 40px 20px;
+background-color: #f9f9f9;
+text-align: center;
+}
+
+#education h2 {
+font-size: 2rem;
+margin-bottom: 30px;
+color: #0d1b2a;
+}
+
+.timeline {
+position: relative;
+max-width: 800px;
+margin: 0 auto;
+padding-left: 20px;
+border-left: 3px solid #0077cc;
+}
+
+.timeline-item {
+position: relative;
+margin-bottom: 40px;
+padding-left: 20px;
+}
+
+.timeline-item::before {
+content: "";
+position: absolute;
+top: 5px;
+left: -11px;
+width: 18px;
+height: 18px;
+background-color: #0077cc;
+border: 3px solid white;
+border-radius: 50%;
+z-index: 1;
+}
+
+.timeline-item h3 {
+font-size: 1.25rem;
+margin-bottom: 5px;
+color: #0077cc;
+}
+
+.timeline-date {
+font-size: 0.95rem;
+color: #666;
+margin-bottom: 8px;
+display: block;
+}
+
+.timeline-item p {
+font-size: 1rem;
+color: #333;
+margin: 0;
+}
